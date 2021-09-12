@@ -13,6 +13,7 @@ Spark ML Tutorial and Examples for Beginners
 2. Clone this repo and go to the folder and run the below command
 
    ```sh
+   git clone https://github.com/AnishEllore/SparkML_OS_Project.git
    docker run -it --rm -p 8888:8888 --name jupyter -v /"${PWD}":/home/jovyan jupyter/pyspark-notebook start-notebook.sh
    ```
 3. Open the Jupyter notebook in chrome and run mnist_analysis.ipynb
