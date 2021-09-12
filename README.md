@@ -10,13 +10,15 @@ Spark ML Tutorial and Examples for Beginners
    docker pull jupyter/pyspark-notebook
    ```
 
-2. Clone this repo and go to the folder and run the below command
-
-   ```sh
+2. Clone the repo
+    ```sh
    git clone https://github.com/AnishEllore/SparkML_OS_Project.git
+   ```
+3. Go to the folder and run below command to setup jupyter notebook
+   ```sh
    docker run -it --rm -p 8888:8888 --name jupyter -v /"${PWD}":/home/jovyan jupyter/pyspark-notebook start-notebook.sh
    ```
-3. Open the Jupyter notebook in chrome and run mnist_analysis.ipynb
+4. Open the Jupyter notebook in chrome and run mnist_analysis.ipynb
 
 ## Dataset
 - MNIST: https://www.kaggle.com/oddrationale/mnist-in-csv
