@@ -1,22 +1,24 @@
-# pyspark-ml-examples
+# SparkML_OS_Project
 Spark ML Tutorial and Examples for Beginners
 
-## How to start
-Use Docker Images : https://hub.docker.com/r/jupyter/pyspark-notebook/
 
-```
-docker run -it --rm -p 8888:8888 --name jupyter \
--v /YOUR_DOWNLOAD_PATH/pyspark-ml-examples:/home/jovyan jupyter/pyspark-notebook start-notebook.sh
-```
+## 🛠 Installation & Set Up
 
-## Index
-- **spark-ml-starter**: EDA, Preprocessing, Modeling, Evaluation, Tuning
-- **spark-ml-gbt-pipeline**: GBTClassifier, Pipeline
-- **spark-ml-recommendation-explicit**: Movie recommendation with Explicit Collaborative Filtering
-- **spark-ml-recommendation-implicit**: Music recommendation with Implicit Collaborative Filtering
-- **spark-ml-clustering**: Anomaly Detection in Network Trac with K-means Clustering
+1. Use Docker Images : https://hub.docker.com/r/jupyter/pyspark-notebook/ (Need to install [docker](https://docs.docker.com/get-docker/) first) 
+
+   ```sh
+   docker pull jupyter/pyspark-notebook
+   ```
+
+2. Clone this repo and go to the folder and run the below command
+
+   ```sh
+   docker run -it --rm -p 8888:8888 --name jupyter -v /"${PWD}":/home/jovyan jupyter/pyspark-notebook start-notebook.sh
+   ```
+3. Open the Jupyter notebook in chrome and run mnist_analysis.ipynb
 
 ## Dataset
+- MNIST: https://www.kaggle.com/oddrationale/mnist-in-csv
 - Kaggle Titanic Dataset: https://www.kaggle.com/c/titanic/data
 - MovieLens Dataset: https://grouplens.org/datasets/movielens/100k/
 - Last.fm Music Dataset: http://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html
